@@ -1,3 +1,11 @@
 
-let r = 23
-console.log(r);
+//variables
+const accordion = document.getElementsByClassName("content-container");
+
+//add event listener to content-container
+
+for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+}
