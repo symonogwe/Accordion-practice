@@ -25,3 +25,29 @@ body {
     margin-bottom: 30px;
     text-align: center;
 }
+
+.accordion .content-container .question {
+    cursor: pointer;
+    padding: 18px 0px;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.accordion .content-container .question::after {
+    content: "+";
+
+    position: absolute;
+    right: -5px;
+}
+
+.accordion .content-container .answer {
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100px;
+
+    height: 0px;
+    overflow: hidden;
+    transform: .5s;
+}
